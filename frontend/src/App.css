@@ -1,0 +1,275 @@
+.App {
+  text-align: center;
+  min-height: 100vh;
+  background-color: rgb(245, 245, 249);
+}
+.link {
+  text-decoration: none;
+  color: black;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 7;
+  background-color: white;
+}
+.title {
+  width: 30%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+#dev {
+  width: 100%;
+  display: inline-block;
+  font-size: 25px;
+  font-weight: bolder;
+  font-family: sans-serif;
+  vertical-align: middle;
+  text-align: center;
+  color: rgb(53, 110, 233);
+}
+#thoughts {
+  width: 50%;
+  font-size: 15px;
+  font-family: cursive;
+  padding-bottom: 2px;
+  color: gray;
+  text-align: center;
+}
+.user-right-side {
+  width: 70%;
+  height: 60px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  /* position: relative; */
+  padding: 0 20px;
+  /* background-color: chocolate; */
+}
+.lg-screen {
+  display: none;
+}
+.sml-screen {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 3px;
+  cursor: pointer;
+  background-color: whitesmoke;
+}
+.user-tab-container {
+  width: 100%;
+  min-height: 100vh;
+  position: fixed;
+  top: 0;
+  right: 0;
+  padding: 20px;
+  background-color: rgba(128, 128, 128, 0.8);
+}
+.user-tab {
+  width: 70%;
+  min-height: 100vh;
+  text-align: left;
+  padding: 10px 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: white;
+}
+.user-profile-tab {
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid gray;
+}
+.user-profile-tab p {
+  text-align: center;
+}
+#email-tab {
+  font-size: 13px;
+}
+.user-mini-tab {
+  width: 100%;
+  padding: 0 10px;
+  /* background-color: teal; */
+}
+#signout-tab {
+  width: 100%;
+  text-align: center;
+  padding: 5px;
+  font-size: 14px;
+  border-radius: 3px;
+  background-color: lightgrey;
+}
+
+.signup-signin-tab .link {
+  width: 100%;
+  display: inline-block;
+  text-align: center;
+  font-size: 14px;
+  padding: 2px 10px;
+  border-radius: 3px;
+  margin-bottom: 8px;
+}
+.link-signup {
+  border: 1px solid lightgrey;
+}
+.link-signin {
+  background-color: whitesmoke;
+}
+
+/* tab */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .user-tab-container {
+    width: 100%;
+    min-height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0);
+  }
+  .user-tab {
+    width: 250px;
+    min-height: 150px;
+    text-align: left;
+    padding: 10px 0;
+    position: absolute;
+    top: 70px;
+    right: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px 1px lightgrey;
+    background-color: white;
+  }
+}
+
+/* pc */
+@media only screen and (min-width: 992px) {
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 7;
+    background-color: white;
+  }
+  .title {
+    display: block;
+    width: 30%;
+    text-align: left;
+    padding: 0 30px;
+  }
+  #dev {
+    text-align: left;
+    display: inline;
+    margin-right: 10px;
+    font-size: 35px;
+    font-weight: bolder;
+    font-family: sans-serif;
+    vertical-align: middle;
+    color: rgb(53, 110, 233);
+  }
+  #thoughts {
+    font-size: 17px;
+    font-family: cursive;
+    padding-bottom: 2px;
+    color: gray;
+    border-bottom: 1px solid gray;
+  }
+  .user-right-side {
+    width: 70%;
+    height: 60px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    /* position: relative; */
+    padding: 0 20px;
+    /* background-color: chocolate; */
+  }
+  .lg-screen {
+    display: block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50%;
+    font-size: 20px;
+    font-weight: bolder;
+    font-family: sans-serif;
+    text-align: center;
+    cursor: pointer;
+    color: gray;
+    background-color: lightgrey;
+  }
+  .sml-screen {
+    display: none;
+  }
+  .user-tab-container {
+    width: 100%;
+    min-height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0);
+  }
+  .user-tab {
+    width: 250px;
+    min-height: 150px;
+    text-align: left;
+    padding: 10px 0;
+    position: absolute;
+    top: 70px;
+    right: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px 1px lightgrey;
+    background-color: white;
+  }
+  .user-profile-tab {
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid gray;
+  }
+  .user-profile-tab p {
+    text-align: center;
+  }
+  #email-tab {
+    font-size: 13px;
+  }
+  .user-mini-tab {
+    width: 100%;
+    padding: 0 10px;
+    /* background-color: teal; */
+  }
+  #signout-tab {
+    width: 100%;
+    text-align: center;
+    padding: 5px;
+    font-size: 14px;
+    background-color: lightgrey;
+  }
+  #signout-tab:hover {
+    transition: 0.5s;
+    background-color: whitesmoke;
+  }
+
+  .signup-signin-tab .link {
+    width: 100%;
+
+    display: inline-block;
+    font-size: 14px;
+    padding: 2px 10px;
+  }
+  .link-signin:hover {
+    transition: 0.5s;
+    background-color: lightgrey;
+  }
+  .link-signup:hover {
+    transition: 0.5s;
+    border: 1px solid gray;
+  }
+}

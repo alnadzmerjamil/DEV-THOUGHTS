@@ -1,0 +1,1155 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@media only screen and (max-width: 767px) {
+  .div-main {
+    width: 100%;
+    margin: auto;
+  }
+  .div-for-top-post {
+    width: 100%;
+    margin: auto;
+    background-color: white;
+  }
+  .div-add-post {
+    width: 100%;
+    margin: auto;
+    text-align: left;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    background-color: white;
+  }
+  .div-add-post div {
+    display: inline-block;
+  }
+  .div-for-profile,
+  .div-profile {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 50%;
+    margin-right: 5px;
+    font-size: larger;
+    font-family: sans-serif;
+    background-color: lightgray;
+  }
+  .div-add-post-text {
+    width: calc(100% - 50px);
+    padding: 10px 10px;
+    border-radius: 30px;
+    cursor: pointer;
+    background-color: whitesmoke;
+  }
+  .div-add-post-text:hover {
+    transition: 0.5s;
+    background-color: rgb(236, 234, 234);
+  }
+  .div-per-post {
+    width: 100%;
+    margin: auto;
+    text-align: left;
+    padding: 10px 15px;
+    margin-bottom: 20px;
+
+    background-color: white;
+  }
+  .div-for-profile-per-post {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 20px;
+    /* background-color: thistle; */
+  }
+  .div-user-name {
+    position: relative;
+    width: calc(100% - 50px);
+    padding: 2px;
+  }
+  .name-of-user {
+    font-size: 13px;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  .fa-ellipsis-h {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(0, -50%);
+    color: gray;
+  }
+  .fa-ellipsis-h:hover {
+    transition: 0.5s;
+    background-color: whitesmoke;
+  }
+  .div-edit-delete-post {
+    position: absolute;
+    width: 200px;
+    height: 100px;
+    top: 40px;
+    right: 0;
+    padding: 10px 0;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px 1px lightgray;
+    background-color: white;
+  }
+  .div-edit-delete-post p {
+    padding: 2px 10px;
+    margin-bottom: 5px;
+    font-size: 15px;
+  }
+  .div-edit-delete-post p:hover {
+    transition: 0.5s;
+    background-color: whitesmoke;
+  }
+
+  .post-body {
+    margin-bottom: 10px;
+  }
+  .post-title {
+    width: 100%;
+    display: inline-block;
+    font-size: 13px;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  .div-for-count-like-comment {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10px 0 10px 5px;
+    /* background-color: burlywood; */
+  }
+  .total-likes {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    border-radius: 50%;
+    vertical-align: middle;
+    text-align: center;
+    padding: 1px 2px 10px 2px;
+    font-size: 13px;
+    color: white;
+    background-color: rgb(15, 119, 238);
+  }
+  .div-for-interact-like-comment {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 10px 0;
+    border-bottom: 1px solid lightgray;
+    border-top: 1px solid lightgray;
+  }
+
+  .spn-like,
+  .spn-comment,
+  .spn-share {
+    width: 40%;
+    text-align: center;
+    padding: 5px;
+    border-radius: 5px;
+    color: rgb(114, 112, 112);
+  }
+  .spn-like:hover,
+  .spn-comment:hover,
+  .spn-share:hover {
+    transition: 0.5s;
+    background-color: whitesmoke;
+  }
+  .thumbs-liked {
+    color: rgb(15, 119, 238);
+  }
+  .div-for-show-comments {
+    margin-top: 5px;
+  }
+  .user-profile-comment {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    /* background-color: darkkhaki; */
+    margin-bottom: 10px;
+  }
+  .my-profile-at-comment {
+    margin-top: 20px;
+  }
+  .user-profile-comment .user-profile {
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    border-radius: 50%;
+    text-align: center;
+    background-color: lightgrey;
+  }
+  .user-comment-body {
+    width: calc(100% - 45px);
+    font-size: 13px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 10px;
+    border-radius: 30px;
+    background-color: whitesmoke;
+  }
+  .spn-user-name {
+    display: block;
+
+    font-weight: bold;
+  }
+  .interect-comment {
+    width: calc(100% - 45px);
+    margin-left: 45px;
+    padding: 2px 10px;
+    /* background-color: thistle; */
+  }
+  .interect-comment span {
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 12px;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: rgb(119, 117, 117);
+  }
+  .ipt-comment {
+    width: calc(100% - 45px);
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-radius: 30px;
+    background-color: whitesmoke;
+  }
+  .div-commnet-btn {
+    width: 100%;
+    text-align: right;
+    margin-top: 5px;
+    /* padding-right: 20px; */
+  }
+  .comment-btn {
+    padding: 5px 10px;
+    font-size: 15px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  /* modal */
+  .main-modal {
+    width: 100%;
+    position: fixed;
+    min-height: 100vh;
+    top: 0;
+    z-index: 9;
+    background-color: rgb(255, 255, 255);
+  }
+  .mini-modal {
+    width: 100%;
+    margin: auto;
+  }
+  .create-post-body {
+    width: 100%;
+    min-height: 100vh;
+    margin: auto;
+    overflow: hidden;
+    background-color: white;
+  }
+  .create-post-header {
+    padding: 10px;
+    position: relative;
+    border-bottom: 1px solid lightgray;
+    /* background-color: lightgreen; */
+  }
+  .create-post-text {
+    display: inline-block;
+    width: 100%;
+    line-height: 40px;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: sans-serif;
+    letter-spacing: -1px;
+    /* background-color: honeydew; */
+  }
+  .close-create-post {
+    display: inline-block;
+    position: absolute;
+    top: 15px;
+    right: 10px;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    font-size: 15px;
+    font-family: sans-serif;
+    border-radius: 50%;
+    cursor: pointer;
+    color: gray;
+    background-color: rgb(238, 236, 236);
+  }
+  .close-create-post:hover {
+    transition: 0.5s;
+    background-color: lightgray;
+  }
+  .user-profile-create-post {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px;
+    /* background-color: honeydew; */
+  }
+  .user-profile-create-post .div-user-name {
+    width: calc(100% - 50px);
+    display: inline-block;
+    text-align: left;
+    padding: 0;
+    /* background-color: hotpink; */
+  }
+  .select-topic {
+    font-size: 14px;
+  }
+  .topic-container {
+    width: 200px;
+    position: absolute;
+    top: 40px;
+    padding: 5px 0px;
+    background-color: whitesmoke;
+  }
+  .topic-container p {
+    padding: 0 5px;
+  }
+  .topic-container p:hover {
+    transition: 0.5s;
+    background-color: lightgrey;
+  }
+  .div-for-text-area {
+    padding: 20px;
+    /* background-color: indianred; */
+  }
+  .div-for-text-area textarea {
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    padding: 5px 10px;
+  }
+  .div-post-btn {
+    padding: 20px;
+    /* background-color: khaki; */
+  }
+  .post-btn {
+    width: 100%;
+    border: none;
+    padding: 10px 0;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: sans-serif;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+    background-color: rgb(53, 110, 233);
+  }
+  .post-btn:hover {
+    transition: 0.5s;
+    background-color: rgb(37, 95, 223);
+  }
+  .post-btn-disabled {
+    width: 100%;
+    border: none;
+    padding: 10px 0;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: sans-serif;
+    border-radius: 5px;
+    color: rgb(177, 173, 173);
+    cursor: not-allowed;
+  }
+}
+
+/* tab */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .div-main {
+    width: 85%;
+    margin: auto;
+  }
+  .div-for-top-post {
+    width: 100%;
+    margin: auto;
+    background-color: white;
+  }
+
+  .div-add-post {
+    width: 85%;
+    margin: auto;
+    text-align: left;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 2px 1px lightgray;
+    background-color: white;
+  }
+  .div-add-post div {
+    display: inline-block;
+  }
+  .div-for-profile,
+  .div-profile {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 50%;
+    margin-right: 5px;
+    font-size: larger;
+    font-family: sans-serif;
+    background-color: lightgray;
+  }
+  .div-add-post-text {
+    width: calc(100% - 50px);
+    padding: 10px 10px;
+    border-radius: 30px;
+    cursor: pointer;
+    background-color: whitesmoke;
+  }
+  .div-add-post-text:hover {
+    transition: 0.5s;
+    background-color: rgb(236, 234, 234);
+  }
+  .div-per-post {
+    width: 85%;
+    margin: auto;
+    text-align: left;
+    padding: 10px 15px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 2px 1px lightgray;
+    background-color: white;
+  }
+  .div-for-profile-per-post {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 20px;
+    /* background-color: thistle; */
+  }
+  .div-user-name {
+    position: relative;
+    width: calc(100% - 50px);
+    padding: 2px;
+  }
+  .name-of-user {
+    font-size: 13px;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  .fa-ellipsis-h {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(0, -50%);
+    color: gray;
+  }
+  .fa-ellipsis-h:hover {
+    transition: 0.5s;
+    background-color: whitesmoke;
+  }
+  .div-edit-delete-post {
+    position: absolute;
+    width: 200px;
+    height: 100px;
+    top: 40px;
+    right: 0;
+    padding: 10px 0;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px 1px lightgray;
+    background-color: white;
+  }
+  .div-edit-delete-post p {
+    padding: 2px 10px;
+    margin-bottom: 5px;
+    font-size: 15px;
+  }
+  .div-edit-delete-post p:hover {
+    transition: 0.5s;
+    background-color: whitesmoke;
+  }
+
+  .post-body {
+    margin-bottom: 10px;
+  }
+  .post-title {
+    width: 100%;
+    display: inline-block;
+    font-size: 13px;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  .div-for-count-like-comment {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10px 0 10px 5px;
+    /* background-color: burlywood; */
+  }
+  .total-likes {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    border-radius: 50%;
+    vertical-align: middle;
+    text-align: center;
+    padding: 1px 2px 10px 2px;
+    font-size: 13px;
+    color: white;
+    background-color: rgb(15, 119, 238);
+  }
+  .div-for-interact-like-comment {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 10px 0;
+    border-bottom: 1px solid lightgray;
+    border-top: 1px solid lightgray;
+  }
+
+  .spn-like,
+  .spn-comment,
+  .spn-share {
+    width: 20%;
+    text-align: center;
+    padding: 5px;
+    border-radius: 5px;
+    color: rgb(114, 112, 112);
+  }
+  .spn-like:hover,
+  .spn-comment:hover,
+  .spn-share:hover {
+    transition: 0.5s;
+    background-color: whitesmoke;
+  }
+  .thumbs-liked {
+    color: rgb(15, 119, 238);
+  }
+  .div-for-show-comments {
+    margin-top: 5px;
+  }
+  .user-profile-comment {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    /* background-color: darkkhaki; */
+    margin-bottom: 10px;
+  }
+  .my-profile-at-comment {
+    margin-top: 20px;
+  }
+  .user-profile-comment .user-profile {
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    border-radius: 50%;
+    text-align: center;
+    background-color: lightgrey;
+  }
+  .user-comment-body {
+    width: calc(100% - 45px);
+    font-size: 13px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 10px;
+    border-radius: 30px;
+    background-color: whitesmoke;
+  }
+  .spn-user-name {
+    display: block;
+    font-weight: bold;
+  }
+  .interect-comment {
+    width: calc(100% - 45px);
+    margin-left: 45px;
+    padding: 2px 10px;
+    /* background-color: thistle; */
+  }
+  .interect-comment span {
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 12px;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: rgb(119, 117, 117);
+  }
+  .ipt-comment {
+    width: calc(100% - 45px);
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-radius: 30px;
+    background-color: whitesmoke;
+  }
+  .div-commnet-btn {
+    width: 100%;
+    text-align: right;
+    margin-top: 5px;
+    /* padding-right: 20px; */
+  }
+  .comment-btn {
+    padding: 5px 10px;
+    font-size: 15px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  /* modal */
+  .main-modal {
+    width: 100%;
+    position: fixed;
+    min-height: 100vh;
+    top: 0;
+    z-index: 9;
+    background-color: rgba(255, 255, 255, 0.8);
+  }
+  .mini-modal {
+    width: 85%;
+    margin: auto;
+    padding-top: 50px;
+  }
+  .create-post-body {
+    width: 85%;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0px 0px 2px 1px lightgray;
+    background-color: white;
+  }
+  .create-post-header {
+    padding: 20px;
+    position: relative;
+    border-bottom: 1px solid lightgray;
+    /* background-color: lightgreen; */
+  }
+  .create-post-text {
+    display: inline-block;
+    width: 100%;
+    line-height: 40px;
+    font-size: 23px;
+    font-weight: 600;
+    font-family: sans-serif;
+    letter-spacing: -1px;
+    /* background-color: honeydew; */
+  }
+  .close-create-post {
+    display: inline-block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-size: larger;
+    font-family: sans-serif;
+    border-radius: 50%;
+    cursor: pointer;
+    color: gray;
+    background-color: rgb(238, 236, 236);
+  }
+  .close-create-post:hover {
+    transition: 0.5s;
+    background-color: lightgray;
+  }
+  .user-profile-create-post {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px;
+    /* background-color: rgb(54, 221, 54); */
+  }
+  .user-profile-create-post .div-user-name {
+    width: calc(100% - 50px);
+    display: inline-block;
+    text-align: left;
+    padding: 0;
+    /* background-color: hotpink; */
+  }
+  .select-topic {
+    font-size: 14px;
+  }
+  .topic-container {
+    width: 200px;
+    position: absolute;
+    top: 40px;
+    padding: 5px 0px;
+    background-color: whitesmoke;
+  }
+  .topic-container p {
+    padding: 0 5px;
+  }
+  .topic-container p:hover {
+    transition: 0.5s;
+    background-color: lightgrey;
+  }
+  .div-for-text-area {
+    padding: 20px;
+    /* background-color: indianred; */
+  }
+  .div-for-text-area textarea {
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    padding: 5px 10px;
+  }
+  .div-post-btn {
+    padding: 20px;
+    /* background-color: khaki; */
+  }
+  .post-btn {
+    width: 100%;
+    border: none;
+    padding: 10px 0;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: sans-serif;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+    background-color: rgb(53, 110, 233);
+  }
+  .post-btn:hover {
+    transition: 0.5s;
+    background-color: rgb(37, 95, 223);
+  }
+  .post-btn-disabled {
+    width: 100%;
+    border: none;
+    padding: 10px 0;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: sans-serif;
+    border-radius: 5px;
+    color: rgb(177, 173, 173);
+    cursor: not-allowed;
+  }
+}
+
+/* pc */
+@media only screen and (min-width: 992px) {
+  .div-main {
+    width: 55%;
+    margin: auto;
+  }
+  .div-for-top-post {
+    width: 100%;
+    margin: auto;
+    padding: 10px;
+    background-color: white;
+  }
+  .top-post-wrapper {
+    width: 100%;
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: flex-start;
+    align-items: flex-start;
+    box-sizing: border-box;
+    background-color: thistle;
+  }
+  .div-suggested-post {
+    width: 25%;
+    padding: 10px;
+  }
+  .div-suggested-post span {
+    width: 100%;
+    display: inline-block;
+    background-color: teal;
+  }
+  .div-add-post {
+    width: 85%;
+    margin: auto;
+    text-align: left;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 2px 1px lightgray;
+    background-color: white;
+  }
+  .div-add-post div {
+    display: inline-block;
+  }
+  .div-for-profile,
+  .div-profile {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 50%;
+    margin-right: 5px;
+    font-size: larger;
+    font-family: sans-serif;
+    background-color: lightgray;
+  }
+  .div-add-post-text {
+    width: calc(100% - 50px);
+    padding: 10px 10px;
+    border-radius: 30px;
+    cursor: pointer;
+    background-color: whitesmoke;
+  }
+  .div-add-post-text:hover {
+    transition: 0.5s;
+    background-color: rgb(236, 234, 234);
+  }
+  .div-per-post {
+    width: 85%;
+    margin: auto;
+    text-align: left;
+    padding: 10px 15px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 2px 1px lightgray;
+    background-color: white;
+  }
+  .div-for-profile-per-post {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 20px;
+    /* background-color: thistle; */
+  }
+  .div-user-name {
+    position: relative;
+    width: calc(100% - 50px);
+    padding: 2px;
+  }
+
+  .name-of-user {
+    font-size: 13px;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  .fa-ellipsis-h {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(0, -50%);
+    color: gray;
+  }
+  .fa-ellipsis-h:hover {
+    transition: 0.5s;
+    background-color: whitesmoke;
+  }
+  .div-edit-delete-post {
+    position: absolute;
+    width: 200px;
+    height: 100px;
+    top: 40px;
+    right: 0;
+    padding: 10px 0;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px 1px lightgray;
+    background-color: white;
+  }
+  .div-edit-delete-post p {
+    padding: 2px 10px;
+    margin-bottom: 5px;
+    font-size: 15px;
+  }
+  .div-edit-delete-post p:hover {
+    transition: 0.5s;
+    background-color: whitesmoke;
+  }
+
+  .post-body {
+    margin-bottom: 10px;
+  }
+  .post-title {
+    width: 100%;
+    display: inline-block;
+    font-size: 13px;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  .div-for-count-like-comment {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10px 0 10px 5px;
+    /* background-color: burlywood; */
+  }
+  .total-likes {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    border-radius: 50%;
+    vertical-align: middle;
+    text-align: center;
+    padding: 1px 2px 10px 2px;
+    font-size: 13px;
+    color: white;
+    background-color: rgb(15, 119, 238);
+  }
+  .div-for-interact-like-comment {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 10px 0;
+    border-bottom: 1px solid lightgray;
+    border-top: 1px solid lightgray;
+  }
+
+  .spn-like,
+  .spn-comment,
+  .spn-share {
+    width: 30%;
+    text-align: center;
+    padding: 5px;
+    border-radius: 5px;
+    color: rgb(114, 112, 112);
+  }
+  .spn-like:hover,
+  .spn-comment:hover,
+  .spn-share:hover {
+    transition: 0.5s;
+    background-color: whitesmoke;
+  }
+  .thumbs-liked {
+    color: rgb(15, 119, 238);
+  }
+  .div-for-show-comments {
+    margin-top: 5px;
+  }
+  .user-profile-comment {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    /* background-color: darkkhaki; */
+    margin-bottom: 10px;
+  }
+  .my-profile-at-comment {
+    margin-top: 20px;
+  }
+  .user-profile-comment .user-profile {
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    border-radius: 50%;
+    text-align: center;
+    background-color: lightgrey;
+  }
+  .user-comment-body {
+    width: calc(100% - 45px);
+    font-size: 12px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 10px;
+    border-radius: 30px;
+    background-color: whitesmoke;
+  }
+  .spn-user-name {
+    display: block;
+    font-size: 11px;
+    font-weight: bold;
+    margin-bottom: 3px;
+  }
+  .interect-comment {
+    width: calc(100% - 45px);
+    margin-left: 45px;
+    padding: 2px 10px;
+    /* background-color: thistle; */
+  }
+  .interect-comment span {
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 12px;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: rgb(119, 117, 117);
+  }
+  .ipt-comment {
+    width: calc(100% - 45px);
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-radius: 30px;
+    background-color: whitesmoke;
+  }
+  .div-commnet-btn {
+    width: 100%;
+    text-align: right;
+    margin-top: 5px;
+    /* padding-right: 20px; */
+  }
+  .comment-btn {
+    padding: 5px 10px;
+    font-size: 15px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    color: gray;
+    background-color: lightgray;
+  }
+  .comment-btn:hover {
+    transition: 0.5s;
+    background-color: whitesmoke;
+  }
+  /* modal */
+  .main-modal {
+    width: 100%;
+    position: fixed;
+    min-height: 100vh;
+    top: 0;
+    z-index: 9;
+    background-color: rgba(255, 255, 255, 0.8);
+  }
+  .mini-modal {
+    width: 55%;
+    margin: auto;
+    padding-top: 50px;
+  }
+  .create-post-body {
+    width: 85%;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0px 0px 2px 1px lightgray;
+    background-color: white;
+  }
+  .create-post-header {
+    padding: 20px;
+    position: relative;
+    border-bottom: 1px solid lightgray;
+    /* background-color: lightgreen; */
+  }
+  .create-post-text {
+    display: inline-block;
+    width: 100%;
+    line-height: 40px;
+    font-size: 23px;
+    font-weight: 600;
+    font-family: sans-serif;
+    letter-spacing: -1px;
+    /* background-color: honeydew; */
+  }
+  .close-create-post {
+    display: inline-block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-size: larger;
+    font-family: sans-serif;
+    border-radius: 50%;
+    cursor: pointer;
+    color: gray;
+    background-color: rgb(238, 236, 236);
+  }
+  .close-create-post:hover {
+    transition: 0.5s;
+    background-color: lightgray;
+  }
+  .user-profile-create-post {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px;
+    /* background-color: honeydew; */
+  }
+  .user-profile-create-post .div-user-name {
+    width: calc(100% - 50px);
+    position: relative;
+    display: inline-block;
+    text-align: left;
+    padding: 0;
+    vertical-align: middle;
+    /* background-color: hotpink; */
+  }
+  .select-topic {
+    font-size: 14px;
+  }
+  .topic-container {
+    width: 200px;
+    position: absolute;
+    top: 40px;
+    padding: 5px 0px;
+    background-color: whitesmoke;
+  }
+  .topic-container p {
+    padding: 0 5px;
+  }
+  .topic-container p:hover {
+    transition: 0.5s;
+    background-color: lightgrey;
+  }
+  .div-for-text-area {
+    padding: 20px;
+    /* background-color: indianred; */
+  }
+  .div-for-text-area textarea {
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    padding: 5px 10px;
+  }
+  .div-post-btn {
+    padding: 20px;
+    /* background-color: khaki; */
+  }
+  .post-btn {
+    width: 100%;
+    border: none;
+    padding: 10px 0;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: sans-serif;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+    background-color: rgb(53, 110, 233);
+  }
+  .post-btn:hover {
+    transition: 0.5s;
+    background-color: rgb(37, 95, 223);
+  }
+  .post-btn-disabled {
+    width: 100%;
+    border: none;
+    padding: 10px 0;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: sans-serif;
+    border-radius: 5px;
+    color: rgb(177, 173, 173);
+    cursor: not-allowed;
+  }
+}

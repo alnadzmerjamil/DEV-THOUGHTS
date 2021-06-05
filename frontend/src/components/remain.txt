@@ -1,0 +1,58 @@
+componentDidMount = () => {
+    let topicsCopy = this.state.topics.slice(0);
+    let display = [];
+    for (let i = 0; i <= 2; i++) {
+      display.push(topicsCopy[i]);
+    }
+    this.setState({ firstDisplay: display, firstTopic: display.length });
+  };
+  moreTopic = () => {
+    alert(this.state.firstTopic);
+    let topicsCopy = this.state.topics.slice(0);
+    let display = [];
+    let flag = this.state.firstTopic + 2;
+    let index;
+    if (this.state.firstTopic !== 3) {
+      index = this.state.firstTopic + 1;
+    } else {
+      index = this.state.firstTopic;
+    }
+    for (let i = index; i <= flag; i++) {
+      if (topicsCopy[i]) {
+        display.push(topicsCopy[i]);
+      }
+    }
+    this.setState({ firstDisplay: display, firstTopic: flag });
+  };
+  lessTopic = () => {
+    alert(this.state.firstTopic);
+    let topicsCopy = this.state.topics.slice(0);
+    let display = [];
+    let flag = this.state.firstTopic - 4;
+
+    for (let i = this.state.firstTopic - 2; i >= flag; i--) {
+      console.log(i);
+      if (topicsCopy[i]) {
+        display.unshift(topicsCopy[i]);
+      }
+    }
+    this.setState({ firstDisplay: display, firstTopic: flag });
+  };
+
+
+	//{/* suggested posts */}
+          {/* <div className="div-for-top-post">
+            <div className="top-post-wrapper">
+              {this.state.firstDisplay.map((topic) => {
+                return (
+                  <div className="div-suggested-post" key={topic}>
+                    <span>{topic}</span>
+                  </div>
+                );
+              })}
+            </div>
+
+            <button onClick={this.moreTopic}>More</button>
+
+            <button onClick={this.lessTopic}>Less</button>
+          </div> */}
